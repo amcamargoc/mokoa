@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>MOKAO | Impact Chocolate</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#C5A059", // Gold/Cream accent from the packaging
+                        "background-light": "#F9F7F2", // Creamy background
+                        "background-dark": "#1A2421", // Deep green background
+                        "accent-green": "#2D3E38", // Mid-tone green
+                    },
+                    fontFamily: {
+                        display: ["Playfair Display", "serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        .impact-slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 24px;
+            height: 24px;
+            background: #C5A059;
+            cursor: pointer;
+            border-radius: 50%;
+            border: 2px solid white;
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-accent-green dark:text-gray-100 font-sans transition-colors duration-300">
+    <header
+        class="sticky top-0 z-50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-primary/20 px-6 py-4 flex justify-between items-center">
+        <div class="font-display text-2xl font-bold tracking-widest text-accent-green dark:text-primary">MOKAO</div>
+        <div class="flex items-center gap-4">
+            <button class="p-2 rounded-full hover:bg-primary/10 transition-colors">
+                <span class="material-icons text-xl">shopping_bag</span>
+            </button>
+            <button class="p-2 rounded-full hover:bg-primary/10 transition-colors">
+                <span class="material-icons text-xl">menu</span>
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="px-6 py-12 text-center">
+            <div class="relative w-full aspect-[4/5] rounded-3xl overflow-hidden mb-8 shadow-2xl">
+                <img alt="Close up of raw cacao beans on a burlap sack"
+                    class="absolute inset-0 w-full h-full object-cover"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFH5Y7zIEX8ET5IEtd-5aofgHaJ6k0sjL4R0tvD_timHQIEl0KStDWmE1FCK3VRSmm1LFIZ7EvMKIzaRPHEvASjpVa29XjcC1IbBV96qn5UDz0ODTj3CR4IsuX6y-mEzi1Zjn2KyYeIQSKciU3j2BvZdGxcwOOuqj57Cm9Z8tudp64_om-bFEMDuMEMi__ot9bukBSQ2mcyTaOwu0cydut9QFjjoMPjmy_mY1elX1jephvPg4hcqzmmTyOxmglyIbsgJfmpDY2eukE" />
+                <div
+                    class="absolute inset-0 bg-gradient-to-t from-background-dark/80 to-transparent flex flex-col justify-end p-8 text-left">
+                    <span class="text-primary font-medium tracking-[0.2em] uppercase text-xs mb-2">Direct Trade</span>
+                    <h1 class="font-display text-4xl text-white mb-4">Taste the Transparency.</h1>
+                    <p class="text-gray-200 text-sm leading-relaxed max-w-xs">Connecting you directly with the Maceo
+                        family in Antioquia, Colombia.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-2 gap-4 mb-12">
+                <div class="p-4 bg-white dark:bg-accent-green rounded-2xl shadow-sm border border-primary/10">
+                    <span class="material-icons text-primary mb-2">location_on</span>
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-primary">Origin</h3>
+                    <p class="text-sm">Maceo, Colombia</p>
+                </div>
+                <div class="p-4 bg-white dark:bg-accent-green rounded-2xl shadow-sm border border-primary/10">
+                    <span class="material-icons text-primary mb-2">verified</span>
+                    <h3 class="text-xs font-bold uppercase tracking-wider text-primary">Type</h3>
+                    <p class="text-sm">70% Edelbitter</p>
+                </div>
+            </div>
+        </section>
+        <section class="bg-primary/5 dark:bg-white/5 py-12 px-6 rounded-t-[3rem]">
+            <div class="max-w-md mx-auto">
+                <div class="text-center mb-8">
+                    <h2 class="font-display text-2xl mb-2">Impact Calculator</h2>
+                    <p class="text-sm opacity-70">See exactly how your purchase empowers the producers.</p>
+                </div>
+                <div class="bg-white dark:bg-accent-green p-8 rounded-3xl shadow-xl border border-primary/10">
+                    <div class="mb-8">
+                        <label
+                            class="block text-center text-xs font-bold uppercase tracking-widest mb-4 opacity-60">Quantity
+                            of Bars</label>
+                        <input
+                            class="impact-slider w-full h-1 bg-gray-200 dark:bg-gray-700 rounded-lg appearance-none cursor-pointer accent-primary"
+                            id="quantityRange" max="20" min="1" type="range" value="5" />
+                        <div class="flex justify-between mt-2 text-xs font-medium">
+                            <span>1 Bar</span>
+                            <span class="text-primary font-bold" id="qtyDisplay">5 Bars</span>
+                            <span>20 Bars</span>
+                        </div>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="flex items-center justify-between border-b border-dashed border-primary/20 pb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                    <span class="material-icons text-primary">groups</span>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold">Producer Income</p>
+                                    <p class="text-[10px] opacity-60">Direct to Maceo family</p>
+                                </div>
+                            </div>
+                            <span class="text-lg font-display font-bold text-primary" id="incomeDisplay">$12.50</span>
+                        </div>
+                        <div class="flex items-center justify-between border-b border-dashed border-primary/20 pb-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                    <span class="material-icons text-primary">eco</span>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold">Sustainability Fund</p>
+                                    <p class="text-[10px] opacity-60">For soil regeneration</p>
+                                </div>
+                            </div>
+                            <span class="text-lg font-display font-bold text-primary" id="fundDisplay">$3.75</span>
+                        </div>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
+                                    <span class="material-icons text-primary">local_shipping</span>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold">Logistics &amp; Roasting</p>
+                                    <p class="text-[10px] opacity-60">Operations &amp; transport</p>
+                                </div>
+                            </div>
+                            <span class="text-lg font-display font-bold" id="opsDisplay">$18.75</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-8 flex justify-center">
+                    <button
+                        class="bg-primary text-white px-8 py-4 rounded-full font-bold shadow-lg hover:scale-105 transition-transform flex items-center gap-2">
+                        <span>BUY &amp; EMPOWER</span>
+                        <span class="material-icons">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 px-6">
+            <h2 class="font-display text-3xl mb-8">Meet the Producers</h2>
+            <div class="space-y-12">
+                <div class="relative">
+                    <img alt="Colombian cacao farmer smiling" class="w-full h-80 object-cover rounded-3xl"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuA22GsrXb0n76mApM6aOszHp2Ovm8SGvViglHWwLND7DRtGTQ12l-xPICk5PWDp_8-JObv6FYH6TUKxwqu19qxv30gSdyDH4Eeen-bax4Wgrp9DklyVXtMajJfZJAaB4awydAOJTYOFaMLmrmuvk6lv8XS_Atu1hsQRooPWFC24H1mbD07B5iDvk5KvDhvY2akCvK0VMYqOdBq7DPvpS0srjAIDBoboJyB_f4jfJ8IUf0Ru4pmAkiHeiLMrrL3JHRAtzg2oYxOp2vwD" />
+                    <div class="mt-4">
+                        <h3 class="font-display text-xl mb-2">The Maceo Family</h3>
+                        <p class="text-sm leading-relaxed opacity-80">
+                            "This cacao is carefully grown by farming families in Maceo, Antioquia, Colombia, where
+                            expertise has been passed down through generations. The land is honored and nurtured
+                            throughout the production process."
+                        </p>
+                        <div class="mt-4 flex gap-2">
+                            <span
+                                class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold uppercase rounded-full">Fair
+                                Trade</span>
+                            <span
+                                class="px-3 py-1 bg-primary/10 text-primary text-[10px] font-bold uppercase rounded-full">Organic</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-16 px-6 bg-accent-green text-white">
+            <h2 class="font-display text-2xl mb-6 text-center text-primary">Pure Ingredients</h2>
+            <div class="grid grid-cols-1 gap-4">
+                <div class="p-6 border border-white/10 rounded-2xl flex items-center gap-4">
+                    <span class="material-icons text-primary">circle</span>
+                    <div>
+                        <p class="font-bold">Kakaomasse</p>
+                        <p class="text-xs opacity-60 italic">Cacao paste</p>
+                    </div>
+                </div>
+                <div class="p-6 border border-white/10 rounded-2xl flex items-center gap-4">
+                    <span class="material-icons text-primary">circle</span>
+                    <div>
+                        <p class="font-bold">Kakaobutter</p>
+                        <p class="text-xs opacity-60 italic">Cacao butter</p>
+                    </div>
+                </div>
+                <div class="p-6 border border-white/10 rounded-2xl flex items-center gap-4">
+                    <span class="material-icons text-primary">circle</span>
+                    <div>
+                        <p class="font-bold">Zucker</p>
+                        <p class="text-xs opacity-60 italic">Sugar</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 flex justify-center gap-8 opacity-60">
+                <div class="flex flex-col items-center gap-2">
+                    <span class="material-icons">no_meals</span>
+                    <span class="text-[10px] uppercase font-bold">Glutenfrei</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <span class="material-icons">recycling</span>
+                    <span class="text-[10px] uppercase font-bold">Papier</span>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                    <span class="material-icons">public</span>
+                    <span class="text-[10px] uppercase font-bold">CO2 Neutral</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="py-12 px-6 text-center opacity-40 text-xs">
+        <p>© 2024 MOKAO Chocolate. All rights reserved.</p>
+        <p class="mt-2 uppercase tracking-widest">Antioquia, Colombia</p>
+    </footer>
+    <script>
+        const slider = document.getElementById('quantityRange');
+        const qtyDisplay = document.getElementById('qtyDisplay');
+        const incomeDisplay = document.getElementById('incomeDisplay');
+        const fundDisplay = document.getElementById('fundDisplay');
+        const opsDisplay = document.getElementById('opsDisplay');
+        const PRICING = {
+            producer: 2.50,
+            fund: 0.75,
+            ops: 3.75
+        };
+        slider.oninput = function () {
+            const val = parseInt(this.value);
+            qtyDisplay.innerHTML = `${val} Bar${val > 1 ? 's' : ''}`;
+            incomeDisplay.innerHTML = `$${(val * PRICING.producer).toFixed(2)}`;
+            fundDisplay.innerHTML = `$${(val * PRICING.fund).toFixed(2)}`;
+            opsDisplay.innerHTML = `$${(val * PRICING.ops).toFixed(2)}`;
+        }
+    </script>
+
+</body>
+
+</html>

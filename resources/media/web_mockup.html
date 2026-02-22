@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>MOKAO | Colombian Heritage Chocolate</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&amp;family=Lora:ital,wght@0,400;0,600;1,400&amp;family=Inter:wght@300;400;500&amp;display=swap"
+        rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#D4AF37", // Gold
+                        "background-light": "#2D3E35", // Deep Forest Green
+                        "background-dark": "#1A2520",
+                    },
+                    fontFamily: {
+                        display: ["Cinzel", "serif"],
+                        serif: ["Lora", "serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.25rem",
+                    },
+                },
+            },
+        };
+    </script>
+    <style>
+        .gold-border {
+            border: 1px solid #D4AF37;
+        }
+
+        .hero-pattern {
+            background-image: radial-gradient(circle at center, rgba(212, 175, 55, 0.1) 0%, transparent 70%);
+        }
+
+        .etched-line {
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #D4AF37, transparent);
+        }
+    </style>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+
+<body
+    class="bg-background-light dark:bg-background-dark text-white font-sans selection:bg-primary selection:text-background-light">
+    <nav
+        class="fixed top-0 w-full z-50 bg-background-light/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-primary/20">
+        <div class="px-6 py-4 flex justify-between items-center max-w-lg mx-auto">
+            <span class="material-icons text-primary">menu</span>
+            <h1 class="font-display text-2xl tracking-[0.2em] text-primary">MOKAO</h1>
+            <span class="material-icons text-primary">shopping_bag</span>
+        </div>
+    </nav>
+    <main class="pt-16 max-w-lg mx-auto">
+        <section class="relative px-6 pt-12 pb-20 overflow-hidden text-center">
+            <div class="hero-pattern absolute inset-0 pointer-events-none"></div>
+            <div class="absolute top-8 left-6 w-12 h-12 border-t-2 border-l-2 border-primary/40 rounded-tl-xl"></div>
+            <div class="absolute top-8 right-6 w-12 h-12 border-t-2 border-r-2 border-primary/40 rounded-tr-xl"></div>
+            <div class="relative z-10">
+                <span class="font-serif italic text-primary/80 text-sm tracking-widest uppercase mb-4 block">Single
+                    Origin</span>
+                <h2 class="font-display text-4xl mb-6 tracking-tight leading-tight">
+                    KOLUMBUANISCHE<br />SCHOKOLADE
+                </h2>
+                <p class="font-serif italic text-primary/70 mb-8">70% Kakao / Cacao</p>
+                <div class="relative w-full aspect-[4/5] mb-12 rounded-lg overflow-hidden gold-border p-1">
+                    <img alt="Detailed view of artisanal dark chocolate texture"
+                        class="w-full h-full object-cover opacity-80"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkQNCzElorKhVzTFYKQ77yplXJaL4b-Fn7UiWO0tqEbzPSbhNbADG-EZbmL9GqYveLEONtZy2l36XjJ-fI_SYiF5Fuu2VuFmVa6Sq4xeserQFXicO50fGLRo4bIggFVuHRTjE6ESXGpkdCl37lBt_RmeVv0oPKDOEWdPuMHskbsWkhVInizyaTVwoGYxO9SIfPD7O813se_KAV9kc1G4ai-kfJZNZ6FZVd3u6tOVPoLyT0m7sBpF31AzmVs9BWSjBBUN_6tezABfme" />
+                    <div class="absolute inset-0 flex items-center justify-center">
+                        <div class="bg-background-light/40 backdrop-blur-sm p-4 border border-primary/30">
+                            <p class="font-display text-xs tracking-widest text-primary">COLOMBIAN HERITAGE</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="etched-line mb-8"></div>
+                <p class="font-serif text-lg leading-relaxed text-gray-200 px-4">
+                    "Our chocolate is crafted with fino de aroma cacao, prized for its delicate notes, natural
+                    complexity, and balanced bitterness."
+                </p>
+            </div>
+        </section>
+        <section class="bg-[#24332B] dark:bg-[#151D1A] py-20 px-6 border-y border-primary/10">
+            <div class="mb-10 text-center">
+                <span class="material-icons text-primary mb-2">eco</span>
+                <h3 class="font-display text-2xl text-primary tracking-wide">The Story of Maceo</h3>
+            </div>
+            <div class="relative mb-8 rounded-2xl overflow-hidden aspect-square gold-border">
+                <img alt="Colombian cacao farmer smiling in the plantation"
+                    class="w-full h-full object-cover grayscale brightness-75 hover:grayscale-0 transition-all duration-700"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuABj0HDtYNN1lRJKIvTMaCoBFJ4PkgPirzu88Bc_PEo9aAIETX0bAjxoPdlBmVABsdpk35b19zbZ8g03fa_Cdvxc8B2fc4UN2phjBjY4im3XFnsUZ7nBMUV-JUUaJoGWXBSfp3bRS44J4G6zdh7epAgLSj7MJuxMCq0UsuyMscAsmisUc7fWaxoge1ECESxWu23tWlVaMd6PivUwilqmQMSEMRnOGGeede6Xz8Ux6tw5w_2Yx-vr8WisAs7bjMtkydh9C5mvrqYOi4g" />
+                <div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent">
+                    <p class="font-display text-sm text-primary">THE ARBOLEDA FAMILY</p>
+                    <p class="text-xs text-gray-300">Antioquia, Colombia</p>
+                </div>
+            </div>
+            <p class="font-serif text-gray-300 leading-relaxed mb-6">
+                This cacao is carefully grown by farming families in Maceo, Antioquia, where expertise has been passed
+                down through generations. The land is honored and nurtured throughout the production process.
+            </p>
+            <button
+                class="w-full py-4 px-6 border border-primary text-primary font-display text-sm tracking-widest hover:bg-primary hover:text-background-light transition-colors">
+                MEET THE PRODUCERS
+            </button>
+        </section>
+        <section class="py-20 px-6">
+            <h3 class="font-display text-2xl text-center mb-12 text-primary tracking-wide">Radical Transparency</h3>
+            <div class="grid grid-cols-2 gap-6">
+                <div class="text-center p-6 border border-primary/20 rounded-lg">
+                    <span class="material-icons text-3xl text-primary mb-4">agriculture</span>
+                    <h4 class="font-display text-xs tracking-widest mb-2">FARMER SHARE</h4>
+                    <p class="text-2xl font-serif text-primary">€1.42</p>
+                    <p class="text-[10px] text-gray-400 mt-2">3x Fair Trade Min.</p>
+                </div>
+                <div class="text-center p-6 border border-primary/20 rounded-lg">
+                    <span class="material-icons text-3xl text-primary mb-4">local_shipping</span>
+                    <h4 class="font-display text-xs tracking-widest mb-2">LOGISTICS</h4>
+                    <p class="text-2xl font-serif text-primary">€0.85</p>
+                    <p class="text-[10px] text-gray-400 mt-2">Direct Import</p>
+                </div>
+                <div class="text-center p-6 border border-primary/20 rounded-lg">
+                    <span class="material-icons text-3xl text-primary mb-4">precision_manufacturing</span>
+                    <h4 class="font-display text-xs tracking-widest mb-2">PRODUCTION</h4>
+                    <p class="text-2xl font-serif text-primary">€1.20</p>
+                    <p class="text-[10px] text-gray-400 mt-2">Small Batch Craft</p>
+                </div>
+                <div class="text-center p-6 border border-primary/20 rounded-lg">
+                    <span class="material-icons text-3xl text-primary mb-4">volunteer_activism</span>
+                    <h4 class="font-display text-xs tracking-widest mb-2">COMMUNITY</h4>
+                    <p class="text-2xl font-serif text-primary">€0.45</p>
+                    <p class="text-[10px] text-gray-400 mt-2">Local Education Fund</p>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <p class="text-xs font-serif italic text-primary/60">Every cent is accounted for. We believe in a
+                    chocolate industry that empowers rather than exploits.</p>
+            </div>
+        </section>
+        <section class="px-6 pb-24">
+            <div class="gold-border p-8 bg-black/10">
+                <h4 class="font-display text-lg mb-6 border-b border-primary/30 pb-2">NÄHRWERTANGABEN</h4>
+                <div class="space-y-3 font-serif text-sm">
+                    <div class="flex justify-between border-b border-primary/10 pb-1">
+                        <span>Brennwert</span>
+                        <span>2365kj / 591 kcal</span>
+                    </div>
+                    <div class="flex justify-between border-b border-primary/10 pb-1">
+                        <span>Fett</span>
+                        <span>42,8 g</span>
+                    </div>
+                    <div class="flex justify-between border-b border-primary/10 pb-1">
+                        <span>Kohlenhydrate</span>
+                        <span>34,8 g</span>
+                    </div>
+                    <div class="flex justify-between border-b border-primary/10 pb-1">
+                        <span>Protein</span>
+                        <span>9,8 g</span>
+                    </div>
+                </div>
+                <div class="mt-10 flex justify-around opacity-60">
+                    <div class="flex flex-col items-center">
+                        <span class="material-icons text-3xl">task_alt</span>
+                        <span class="text-[10px] mt-2 uppercase tracking-tighter">Glutenfrei</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="material-icons text-3xl">public</span>
+                        <span class="text-[10px] mt-2 uppercase tracking-tighter">CO2 Neutral</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="material-icons text-3xl">recycling</span>
+                        <span class="text-[10px] mt-2 uppercase tracking-tighter">Recyclable</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-black/20 dark:bg-black/40 py-12 px-6 text-center border-t border-primary/20">
+            <h1 class="font-display text-3xl tracking-[0.3em] text-primary mb-8">MOKAO</h1>
+            <div class="flex justify-center gap-6 mb-8">
+                <a class="text-primary/60 hover:text-primary" href="#"><span class="material-icons">facebook</span></a>
+                <a class="text-primary/60 hover:text-primary" href="#"><span
+                        class="material-icons">camera_alt</span></a>
+                <a class="text-primary/60 hover:text-primary" href="#"><span
+                        class="material-icons">mail_outline</span></a>
+            </div>
+            <p class="text-[10px] text-gray-500 uppercase tracking-widest">© 2024 MOKAO CHOCOLATE COLOMBIANO. ALL RIGHTS
+                RESERVED.</p>
+        </footer>
+    </main>
+    <div class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[calc(100%-48px)] max-w-sm z-50">
+        <button
+            class="w-full bg-primary text-background-light py-4 rounded-full font-display text-sm tracking-widest shadow-2xl active:scale-95 transition-transform flex items-center justify-center gap-2">
+            SHOP THE COLLECTION
+            <span class="material-icons text-sm">arrow_forward</span>
+        </button>
+    </div>
+
+</body>
+
+</html>
