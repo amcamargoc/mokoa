@@ -13,17 +13,59 @@ import Link from "next/link";
  * - Mobile-first: compact on small screens, expanded on desktop
  */
 
-const LANGUAGES = ["EN", "DE", "ES"] as const;
-type Language = (typeof LANGUAGES)[number];
+const LANGUAGES = [
+    {
+        code: "EN", flag: (
+            <svg viewBox="0 0 64 64" width="16" height="16" className="rounded-sm flex-shrink-0">
+                <rect width="64" height="64" fill="#B22234" />
+                <rect y="6" width="64" height="6" fill="#FFF" />
+                <rect y="18" width="64" height="6" fill="#FFF" />
+                <rect y="30" width="64" height="6" fill="#FFF" />
+                <rect y="42" width="64" height="6" fill="#FFF" />
+                <rect y="54" width="64" height="6" fill="#FFF" />
+                <rect width="32" height="34" fill="#3C3B6E" />
+                <circle cx="8" cy="8" r="1.5" fill="#FFF" />
+                <circle cx="16" cy="8" r="1.5" fill="#FFF" />
+                <circle cx="24" cy="8" r="1.5" fill="#FFF" />
+                <circle cx="8" cy="17" r="1.5" fill="#FFF" />
+                <circle cx="16" cy="17" r="1.5" fill="#FFF" />
+                <circle cx="24" cy="17" r="1.5" fill="#FFF" />
+                <circle cx="8" cy="26" r="1.5" fill="#FFF" />
+                <circle cx="16" cy="26" r="1.5" fill="#FFF" />
+                <circle cx="24" cy="26" r="1.5" fill="#FFF" />
+            </svg>
+        )
+    },
+    {
+        code: "DE", flag: (
+            <svg viewBox="0 0 64 64" width="16" height="16" className="rounded-sm flex-shrink-0">
+                <rect width="64" height="21.3" fill="#000000" />
+                <rect y="21.3" width="64" height="21.3" fill="#DD0000" />
+                <rect y="42.6" width="64" height="21.4" fill="#FFCE00" />
+            </svg>
+        )
+    },
+    {
+        code: "ES", flag: (
+            <svg viewBox="0 0 64 64" width="16" height="16" className="rounded-sm flex-shrink-0">
+                <rect width="64" height="64" fill="#FCD116" />
+                <rect y="32" width="64" height="16" fill="#003893" />
+                <rect y="48" width="64" height="16" fill="#CE1126" />
+            </svg>
+        )
+    },
+];
+
+type LanguageCode = "EN" | "DE" | "ES";
 
 export default function Navbar() {
-    const [activeLang, setActiveLang] = useState<Language>("EN");
+    const [activeLang, setActiveLang] = useState<LanguageCode>("ES");
     const [menuOpen, setMenuOpen] = useState(false);
     const [langMenuOpen, setLangMenuOpen] = useState(false);
 
     return (
         <nav
-            className="fixed top-0 left-0 right-0 z-50 border-b border-mokao-gold/20 glass-panel"
+            className="fixed top-0 left-0 right-0 z-50 border-b border-mokao-gold/20 bg-mokao-dark/95 backdrop-blur-md"
             role="navigation"
             aria-label="Main navigation"
         >
@@ -70,27 +112,29 @@ export default function Navbar() {
                 <div className="relative">
                     <button
                         onClick={() => setLangMenuOpen(!langMenuOpen)}
-                        className="flex items-center gap-1 text-xs tracking-wider px-2 py-1 text-mokao-gold font-medium hover:text-mokao-cream transition-colors"
+                        className="flex items-center gap-2 text-xs tracking-wider px-2 py-1 text-mokao-gold font-medium hover:text-mokao-cream transition-colors"
                         aria-expanded={langMenuOpen}
                     >
+                        <span className="flex items-center justify-center opacity-90">{LANGUAGES.find(l => l.code === activeLang)?.flag}</span>
                         {activeLang}
-                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" strokeWidth="1.5" className={`transition-transform duration-200 ${langMenuOpen ? 'rotate-180' : ''}`}>
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" strokeWidth="1.5" className={`transition-transform duration-200 ml-1 ${langMenuOpen ? 'rotate-180' : ''}`}>
                             <path d="M1 1l4 4 4-4" />
                         </svg>
                     </button>
 
                     {langMenuOpen && (
-                        <div className="absolute top-full right-0 mt-2 py-2 w-16 bg-mokao-dark/95 backdrop-blur-md border border-mokao-gold/20 rounded shadow-xl flex flex-col text-center">
+                        <div className="absolute top-full right-0 mt-2 py-2 w-[88px] bg-mokao-dark/95 backdrop-blur-md border border-mokao-gold/20 rounded shadow-xl flex flex-col">
                             {LANGUAGES.map((lang) => (
                                 <button
-                                    key={lang}
-                                    onClick={() => { setActiveLang(lang); setLangMenuOpen(false); }}
-                                    className={`text-xs tracking-wider px-2 py-2 transition-colors ${activeLang === lang
+                                    key={lang.code}
+                                    onClick={() => { setActiveLang(lang.code as LanguageCode); setLangMenuOpen(false); }}
+                                    className={`flex items-center gap-2.5 text-xs tracking-wider px-3 py-2.5 transition-colors ${activeLang === lang.code
                                         ? "text-mokao-gold font-medium bg-mokao-gold/5"
                                         : "text-mokao-cream-muted hover:text-mokao-gold hover:bg-mokao-gold/5"
                                         }`}
                                 >
-                                    {lang}
+                                    <span className="flex items-center justify-center opacity-90">{lang.flag}</span>
+                                    {lang.code}
                                 </button>
                             ))}
                         </div>

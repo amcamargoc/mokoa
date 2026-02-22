@@ -53,10 +53,3 @@ body {
   height: 1px;
   background: linear-gradient(90deg, transparent, var(--color-mokao-gold), transparent);
 }
-
-/* Frosted glass panel for overlays */
-.glass-panel {
-  background: rgba(26, 37, 32, 0.6);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-}

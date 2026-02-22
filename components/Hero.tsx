@@ -18,78 +18,53 @@ export default function Hero() {
         <section className="relative min-h-screen flex items-end md:items-center overflow-hidden">
             {/* Background image */}
             <Image
-                src="/assets/media/reference-2.jpg"
-                alt="Cacao beans drying in wooden trays at a farm in Maceo, Antioquia, Colombia"
+                src="/assets/media/williamreed-cacao.jpg"
+                alt="Fresh Colombian cacao pods showing vibrant colors and organic textures"
                 fill
                 priority
                 className="object-cover object-center"
                 sizes="100vw"
-                quality={85}
+                quality={90}
             />
 
-            {/* Gradient overlays for text readability */}
-            <div className="absolute inset-0 bg-gradient-to-t from-mokao-dark via-mokao-dark/70 to-mokao-dark/30" />
-            <div className="absolute inset-0 bg-gradient-to-r from-mokao-dark/40 to-transparent" />
+            {/* Gradient overlays for perfect contrast */}
+            <div className="absolute inset-0 bg-gradient-to-t from-mokao-dark via-mokao-dark/70 to-mokao-dark/20" />
+            <div className="absolute inset-0 bg-gradient-to-r from-mokao-dark/90 via-mokao-dark/60 to-transparent" />
 
             {/* Content */}
-            <div className="relative z-10 w-full max-w-7xl mx-auto px-5 pb-20 pt-32 md:py-0 md:flex md:items-center md:justify-between md:gap-12">
-                {/* Text block */}
-                <div className="md:max-w-xl">
-                    <span className="inline-block font-serif italic text-mokao-gold/80 text-sm tracking-[0.2em] uppercase mb-4">
-                        Single Origin
-                    </span>
+            <div className="relative z-10 w-full max-w-7xl mx-auto px-6 sm:px-10 lg:px-16 pt-40 pb-36 flex flex-col justify-end h-full">
+                <div className="flex flex-col md:flex-row md:items-end justify-between gap-12 lg:gap-24">
+                    {/* Title block */}
+                    <div className="max-w-2xl text-left">
+                        <h2 className="font-display text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-white leading-[1.1] font-light tracking-tight">
+                            Cacao <span className="block text-mokao-gold italic">con propósito.</span>
+                        </h2>
+                    </div>
 
-                    <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-6">
-                        From Seed
-                        <br />
-                        to Soul
-                    </h2>
-
-                    <p className="font-serif text-lg sm:text-xl text-mokao-cream/80 leading-relaxed mb-10 max-w-md">
-                        Experience the deep, complex notes of Maceo, Antioquia. A journey
-                        through the heart of Colombian cacao.
-                    </p>
-
-                    <a
-                        href="#origin"
-                        className="inline-flex items-center gap-3 bg-mokao-gold text-mokao-dark px-8 py-4 font-display text-sm tracking-[0.15em] uppercase hover:bg-mokao-gold-muted transition-colors duration-300 group"
-                    >
-                        Discover Our Origin
-                        <svg
-                            width="16"
-                            height="16"
-                            viewBox="0 0 16 16"
-                            fill="none"
-                            stroke="currentColor"
-                            strokeWidth="1.5"
-                            className="group-hover:translate-x-1 transition-transform"
-                        >
-                            <path d="M8 1v14M1 8l7 7 7-7" />
-                        </svg>
-                    </a>
-                </div>
-
-                {/* Floating packaging mockup — visible on md+ screens */}
-                <div className="hidden md:block relative w-72 lg:w-80 flex-shrink-0">
-                    <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
-                        <Image
-                            src="/assets/media/caja-verde.jpg"
-                            alt="MOKAO 70% Fino de Aroma dark chocolate packaging — green edition"
-                            fill
-                            className="object-contain"
-                            sizes="320px"
-                        />
+                    {/* Description block */}
+                    <div className="max-w-md md:pb-4 text-left md:text-right flex flex-col md:items-end">
+                        <p className="font-serif text-lg sm:text-xl text-mokao-cream/90 leading-relaxed">
+                            Elaborado con excelencia, cultivado con respeto y comercializado con transparencia real.
+                        </p>
                     </div>
                 </div>
             </div>
 
-            {/* Scroll indicator */}
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
-                <span className="text-[10px] tracking-[0.3em] uppercase text-mokao-gold/50 font-sans">
-                    Scroll
+            {/* Scroll indicator / CTA */}
+            <a
+                href="#origin"
+                className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-3 transition-opacity duration-300 hover:opacity-80 group cursor-pointer"
+                aria-label="Conoce MOKAO"
+            >
+                <span className="text-[10px] sm:text-xs tracking-[0.3em] uppercase text-mokao-gold/80 font-sans group-hover:text-mokao-gold transition-colors">
+                    Conoce MOKAO
                 </span>
-                <div className="w-px h-8 bg-gradient-to-b from-mokao-gold/50 to-transparent" />
-            </div>
+                <div className="animate-bounce mt-1">
+                    <svg className="w-5 h-5 text-mokao-gold/80 group-hover:text-mokao-gold transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                    </svg>
+                </div>
+            </a>
         </section>
     );
 }
