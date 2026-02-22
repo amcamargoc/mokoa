@@ -59,7 +59,7 @@ export default function Hero() {
                 <span className="text-[10px] sm:text-xs tracking-[0.3em] uppercase text-mokao-gold/80 font-sans group-hover:text-mokao-gold transition-colors">
                     Conoce MOKAO
                 </span>
-                <div className="animate-bounce mt-1">
+                <div className="mt-1">
                     <svg className="w-5 h-5 text-mokao-gold/80 group-hover:text-mokao-gold transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
                     </svg>
