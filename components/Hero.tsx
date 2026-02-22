@@ -34,12 +34,12 @@ export default function Hero() {
             {/* Content */}
             <div className="relative z-10 w-full max-w-7xl mx-auto px-5 pb-20 pt-32 md:py-0 md:flex md:items-center md:justify-between md:gap-12">
                 {/* Text block */}
-                <div className="md:max-w-xl animate-fade-in">
+                <div className="md:max-w-xl">
                     <span className="inline-block font-serif italic text-mokao-gold/80 text-sm tracking-[0.2em] uppercase mb-4">
                         Single Origin
                     </span>
 
-                    <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-white leading-tight tracking-tight mb-6">
+                    <h2 className="font-display text-4xl sm:text-5xl lg:text-6xl text-white leading-tight mb-6">
                         From Seed
                         <br />
                         to Soul
@@ -52,7 +52,7 @@ export default function Hero() {
 
                     <a
                         href="#origin"
-                        className="inline-flex items-center gap-3 border border-mokao-gold text-mokao-gold px-8 py-4 font-display text-sm tracking-[0.15em] uppercase hover:bg-mokao-gold hover:text-mokao-dark transition-all duration-300 group"
+                        className="inline-flex items-center gap-3 bg-mokao-gold text-mokao-dark px-8 py-4 font-display text-sm tracking-[0.15em] uppercase hover:bg-mokao-gold-muted transition-colors duration-300 group"
                     >
                         Discover Our Origin
                         <svg
@@ -70,7 +70,7 @@ export default function Hero() {
                 </div>
 
                 {/* Floating packaging mockup — visible on md+ screens */}
-                <div className="hidden md:block relative w-72 lg:w-80 flex-shrink-0 animate-slide-up">
+                <div className="hidden md:block relative w-72 lg:w-80 flex-shrink-0">
                     <div className="relative aspect-[4/3] rounded-lg overflow-hidden shadow-2xl">
                         <Image
                             src="/assets/media/caja-verde.jpg"
@@ -84,7 +84,7 @@ export default function Hero() {
             </div>
 
             {/* Scroll indicator */}
-            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2 animate-fade-in-slow">
+            <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-2">
                 <span className="text-[10px] tracking-[0.3em] uppercase text-mokao-gold/50 font-sans">
                     Scroll
                 </span>

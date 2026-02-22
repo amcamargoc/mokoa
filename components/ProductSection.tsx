@@ -135,7 +135,7 @@ export default function ProductSection() {
                                 {TASTING_NOTES.map((note) => (
                                     <div
                                         key={note.title}
-                                        className="p-4 border border-mokao-gold/15 rounded-lg hover:border-mokao-gold/30 transition-colors"
+                                        className="p-4 border border-mokao-gold/15 rounded-lg"
                                     >
                                         <span className="text-2xl mb-2 block">{note.icon}</span>
                                         <p className="font-display text-xs tracking-wider text-mokao-cream mb-1">

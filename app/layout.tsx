@@ -7,7 +7,7 @@ import Footer from "@/components/Footer";
  * Root Layout
  *
  * Architecture decisions:
- * - Fonts loaded via CSS @import in globals.css (Cinzel, Lora, Inter)
+ * - Fonts loaded via CSS @import in globals.css (Playfair Display, Lora, Inter)
  *   rather than next/font/google because we use 3 distinct font families
  *   and the CSS approach is cleaner with Tailwind v4 @theme tokens.
  * - Navbar and Footer are rendered at the layout level so they persist

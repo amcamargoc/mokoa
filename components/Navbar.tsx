@@ -19,6 +19,7 @@ type Language = (typeof LANGUAGES)[number];
 export default function Navbar() {
     const [activeLang, setActiveLang] = useState<Language>("EN");
     const [menuOpen, setMenuOpen] = useState(false);
+    const [langMenuOpen, setLangMenuOpen] = useState(false);
 
     return (
         <nav
@@ -66,26 +67,40 @@ export default function Navbar() {
                 </Link>
 
                 {/* Language toggle */}
-                <div className="flex items-center gap-1">
-                    {LANGUAGES.map((lang) => (
-                        <button
-                            key={lang}
-                            onClick={() => setActiveLang(lang)}
-                            className={`text-xs tracking-wider px-2 py-1 transition-colors ${activeLang === lang
-                                    ? "text-mokao-gold font-medium"
-                                    : "text-mokao-cream-muted hover:text-mokao-gold"
-                                }`}
-                            aria-label={`Switch to ${lang}`}
-                        >
-                            {lang}
-                        </button>
-                    ))}
+                <div className="relative">
+                    <button
+                        onClick={() => setLangMenuOpen(!langMenuOpen)}
+                        className="flex items-center gap-1 text-xs tracking-wider px-2 py-1 text-mokao-gold font-medium hover:text-mokao-cream transition-colors"
+                        aria-expanded={langMenuOpen}
+                    >
+                        {activeLang}
+                        <svg width="10" height="6" viewBox="0 0 10 6" fill="none" stroke="currentColor" strokeWidth="1.5" className={`transition-transform duration-200 ${langMenuOpen ? 'rotate-180' : ''}`}>
+                            <path d="M1 1l4 4 4-4" />
+                        </svg>
+                    </button>
+
+                    {langMenuOpen && (
+                        <div className="absolute top-full right-0 mt-2 py-2 w-16 bg-mokao-dark/95 backdrop-blur-md border border-mokao-gold/20 rounded shadow-xl flex flex-col text-center">
+                            {LANGUAGES.map((lang) => (
+                                <button
+                                    key={lang}
+                                    onClick={() => { setActiveLang(lang); setLangMenuOpen(false); }}
+                                    className={`text-xs tracking-wider px-2 py-2 transition-colors ${activeLang === lang
+                                        ? "text-mokao-gold font-medium bg-mokao-gold/5"
+                                        : "text-mokao-cream-muted hover:text-mokao-gold hover:bg-mokao-gold/5"
+                                        }`}
+                                >
+                                    {lang}
+                                </button>
+                            ))}
+                        </div>
+                    )}
                 </div>
             </div>
 
             {/* Mobile menu panel — placeholder for future nav links */}
             {menuOpen && (
-                <div className="border-t border-mokao-gold/10 px-5 py-6 animate-fade-in">
+                <div className="border-t border-mokao-gold/10 px-5 py-6">
                     <ul className="space-y-4 font-serif text-lg text-mokao-cream">
                         <li>
                             <Link

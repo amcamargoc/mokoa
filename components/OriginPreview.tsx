@@ -33,12 +33,12 @@ export default function OriginPreview() {
                 <div className="md:grid md:grid-cols-2 md:gap-16 md:items-center">
                     {/* Image + location badge */}
                     <div className="relative mb-10 md:mb-0">
-                        <div className="relative aspect-[4/5] rounded-2xl overflow-hidden border border-mokao-gold/20">
+                        <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-mokao-gold/20">
                             <Image
                                 src="/assets/media/reference-1.jpg"
                                 alt="A farmer carefully selecting and drying cacao beans in Maceo, Antioquia"
                                 fill
-                                className="object-cover grayscale brightness-90 hover:grayscale-0 hover:brightness-100 transition-all duration-700"
+                                className="object-cover"
                                 sizes="(max-width: 768px) 100vw, 50vw"
                             />
 
@@ -83,7 +83,7 @@ export default function OriginPreview() {
                         {/* CTA */}
                         <Link
                             href="/producer"
-                            className="inline-flex items-center gap-3 text-mokao-gold font-display text-sm tracking-[0.15em] uppercase hover:gap-5 transition-all duration-300 group"
+                            className="inline-flex items-center gap-3 text-mokao-gold font-display text-sm tracking-[0.15em] uppercase border-b border-mokao-gold/30 hover:border-mokao-gold pb-1 transition-colors group"
                         >
                             Meet the Family
                             <svg

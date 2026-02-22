@@ -77,7 +77,7 @@ export default function Footer() {
                             <a
                                 href="#"
                                 aria-label="Instagram"
-                                className="text-mokao-cream/40 hover:text-mokao-gold transition-colors"
+                                className="text-mokao-cream/40 hover:text-mokao-gold"
                             >
                                 <svg
                                     width="20"
@@ -97,7 +97,7 @@ export default function Footer() {
                             <a
                                 href="mailto:hello@mokao.co"
                                 aria-label="Email"
-                                className="text-mokao-cream/40 hover:text-mokao-gold transition-colors"
+                                className="text-mokao-cream/40 hover:text-mokao-gold"
                             >
                                 <svg
                                     width="20"
@@ -116,7 +116,7 @@ export default function Footer() {
                             <a
                                 href="#"
                                 aria-label="LinkedIn"
-                                className="text-mokao-cream/40 hover:text-mokao-gold transition-colors"
+                                className="text-mokao-cream/40 hover:text-mokao-gold"
                             >
                                 <svg
                                     width="20"
