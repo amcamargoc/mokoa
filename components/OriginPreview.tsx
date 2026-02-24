@@ -41,7 +41,7 @@ export default function OriginPreview() {
                         <div className="w-full max-w-sm mx-auto aspect-[4/3] rounded-xl overflow-hidden border-2 border-mokao-green shadow-xl group bg-mokao-dark relative">
                             <div className="absolute inset-0 z-10 pointer-events-none ring-1 ring-inset ring-mokao-gold/20 rounded-xl" />
                             <iframe
-                                src="https://maps.google.com/maps?q=Maceo,%20Antioquia,%20Colombia&t=k&z=9&ie=UTF8&iwloc=&output=embed"
+                                src="https://maps.google.com/maps?q=Maceo,%20Antioquia,%20Colombia&t=k&z=5&ie=UTF8&iwloc=&output=embed"
                                 className="w-full h-full grayscale-[50%] contrast-125 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
                                 style={{ border: 0 }}
                                 allowFullScreen
