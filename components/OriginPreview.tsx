@@ -17,75 +17,73 @@ export default function OriginPreview() {
     return (
         <section
             id="origin"
-            className="bg-mokao-green py-20 md:py-28 px-5 border-y border-mokao-gold/10"
+            className="bg-mokao-green py-20 md:py-28 px-5 border-y border-mokao-gold/10 overflow-hidden"
         >
             <div className="max-w-7xl mx-auto">
-                {/* Section header */}
-                <div className="text-center mb-14 md:mb-20">
-                    <span className="inline-block font-serif italic text-mokao-gold/70 text-sm tracking-[0.2em] uppercase mb-3">
-                        Our Roots
-                    </span>
-                    <h3 className="font-display text-3xl md:text-4xl text-mokao-gold tracking-wide">
-                        From Maceo to Europe
-                    </h3>
-                </div>
+                <div className="grid md:grid-cols-2 gap-12 md:gap-20 md:items-center mb-16 md:mb-24">
+                    {/* Left Column: Text Content */}
+                    <div className="flex flex-col h-full justify-center order-2 md:order-1">
+                        {/* Section header */}
+                        <div className="mb-8 md:mb-12 text-center md:text-left">
+                            <span className="inline-block font-serif italic text-mokao-gold/70 text-sm tracking-[0.2em] uppercase mb-4">
+                                Our Roots
+                            </span>
+                            <h3 className="font-display text-3xl md:text-4xl lg:text-5xl text-mokao-gold tracking-wide leading-tight">
+                                From Maceo to Europe
+                            </h3>
+                        </div>
 
-                <div className="md:grid md:grid-cols-2 md:gap-16 md:items-center">
-                    {/* Image + location badge */}
-                    <div className="relative mb-10 md:mb-0">
-                        <div className="relative aspect-[4/5] rounded-lg overflow-hidden border border-mokao-gold/20">
+                        <p className="font-serif text-lg md:text-xl text-mokao-cream/90 leading-relaxed mb-10 md:mb-14 text-center md:text-left">
+                            This cacao is grown by farming families in Maceo, Antioquia, Colombia, where knowledge has been passed down through generations. The land is respectfully tended and cared for throughout the production process, preserving the soil and its natural cycles so that every harvest reflects both the origin and the people who nurture it.
+                        </p>
+
+                        {/* Centered Map under text */}
+                        <div className="w-full max-w-sm mx-auto aspect-[4/3] rounded-xl overflow-hidden border-2 border-mokao-green shadow-xl group bg-mokao-dark relative">
+                            <div className="absolute inset-0 z-10 pointer-events-none ring-1 ring-inset ring-mokao-gold/20 rounded-xl" />
+                            <iframe
+                                src="https://maps.google.com/maps?q=Maceo,%20Antioquia,%20Colombia&t=k&z=9&ie=UTF8&iwloc=&output=embed"
+                                className="w-full h-full grayscale-[50%] contrast-125 opacity-90 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-700"
+                                style={{ border: 0 }}
+                                allowFullScreen
+                                loading="lazy"
+                                referrerPolicy="no-referrer-when-downgrade"
+                                title="Map of Maceo, Antioquia, Colombia"
+                            ></iframe>
+                            {/* Overlay gradient to blend map edges softly */}
+                            <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_20px_rgba(0,0,0,0.4)]" />
+                            <div className="absolute bottom-3 left-3 right-3 bg-mokao-dark/90 backdrop-blur-md p-2 rounded text-center pointer-events-none border border-mokao-gold/10">
+                                <span className="text-[10px] uppercase tracking-[0.2em] text-mokao-gold font-display">
+                                    Maceo, Antioquia
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    {/* Right Column: Visual Composition */}
+                    <div className="order-1 md:order-2 w-full max-w-lg mx-auto md:max-w-none mt-8 md:mt-0 mb-12 md:mb-0">
+                        {/* Main Image */}
+                        <div className="relative w-full aspect-[4/5] rounded-xl overflow-hidden border border-mokao-gold/20 shadow-2xl">
                             <Image
-                                src="/assets/media/reference-1.jpg"
-                                alt="A farmer carefully selecting and drying cacao beans in Maceo, Antioquia"
+                                src="/assets/media/williamreed-cacao.jpg"
+                                alt="Fresh cacao showing the rich, natural origins of Mokao chocolate"
                                 fill
                                 className="object-cover"
                                 sizes="(max-width: 768px) 100vw, 50vw"
                             />
-
-                            {/* Location badge overlay */}
-                            <div className="absolute bottom-0 left-0 right-0 p-5 bg-gradient-to-t from-black/80 via-black/40 to-transparent">
-                                <p className="font-display text-xs tracking-[0.2em] text-mokao-gold">
-                                    MACEO, ANTIOQUIA
-                                </p>
-                                <p className="text-xs text-mokao-cream/60 mt-1">Colombia</p>
-                            </div>
-                        </div>
-
-                        {/* Decorative Colombia silhouette — subtle SVG outline */}
-                        <div className="absolute -right-4 -top-4 w-20 h-28 opacity-10 hidden md:block">
-                            <svg viewBox="0 0 100 140" fill="none" stroke="currentColor" strokeWidth="1" className="text-mokao-gold w-full h-full">
-                                <path d="M50 5 C35 8, 20 15, 15 30 C10 45, 12 55, 18 70 C22 80, 15 90, 20 100 C25 110, 30 120, 40 125 C50 130, 55 128, 60 120 C65 112, 70 105, 75 95 C80 85, 85 70, 82 55 C80 40, 70 25, 60 15 C55 10, 52 6, 50 5Z" />
-                            </svg>
                         </div>
                     </div>
+                </div>
 
-                    {/* Text content */}
-                    <div>
-                        <p className="font-serif text-lg text-mokao-cream/85 leading-relaxed mb-8">
-                            Our cacao is carefully grown by farming families in Maceo,
-                            Antioquia, where expertise has been passed down through
-                            generations. The land is honored and nurtured throughout the
-                            production process, preserving the soil and its natural cycles.
-                        </p>
+                {/* Secondary Content: Quote and CTA */}
+                <div className="max-w-4xl mx-auto text-center mt-24 md:mt-32 px-4 md:px-0">
 
-                        {/* Farmer quote */}
-                        <blockquote className="border-l-2 border-mokao-gold/40 pl-6 mb-10">
-                            <p className="font-serif italic text-mokao-cream/70 text-lg leading-relaxed">
-                                &ldquo;Every harvest carries the knowledge of those who came
-                                before us. We don&rsquo;t just grow cacao — we continue a
-                                legacy.&rdquo;
-                            </p>
-                            <cite className="block mt-3 text-sm text-mokao-gold/60 font-sans not-italic tracking-wide">
-                                — The Arboleda Family, Maceo
-                            </cite>
-                        </blockquote>
-
-                        {/* CTA */}
+                    {/* CTA */}
+                    <div className="mt-8">
                         <Link
                             href="/producer"
-                            className="inline-flex items-center gap-3 text-mokao-gold font-display text-sm tracking-[0.15em] uppercase border-b border-mokao-gold/30 hover:border-mokao-gold pb-1 transition-colors group"
+                            className="inline-flex items-center gap-4 text-mokao-gold font-display text-sm md:text-base tracking-[0.2em] uppercase border-b-2 border-mokao-gold/30 hover:border-mokao-gold pb-2 transition-all group"
                         >
-                            Meet the Family
+                            Meet the Producers
                             <svg
                                 width="20"
                                 height="12"
@@ -93,7 +91,7 @@ export default function OriginPreview() {
                                 fill="none"
                                 stroke="currentColor"
                                 strokeWidth="1.5"
-                                className="group-hover:translate-x-1 transition-transform"
+                                className="group-hover:translate-x-2 transition-transform duration-300"
                             >
                                 <path d="M0 6h18M13 1l5 5-5 5" />
                             </svg>
