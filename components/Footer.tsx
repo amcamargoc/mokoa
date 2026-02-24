@@ -16,41 +16,10 @@ export default function Footer() {
     return (
         <footer className="bg-mokao-dark border-t border-mokao-gold/20 py-16 md:py-20 px-5">
             <div className="max-w-7xl mx-auto">
-                {/* Top: Logo + Mission */}
-                <div className="text-center mb-14">
-                    <Link href="/">
-                        <h2 className="font-display text-3xl tracking-[0.3em] text-mokao-gold mb-4">
-                            MOKAO
-                        </h2>
-                    </Link>
-                    <p className="font-serif italic text-mokao-cream/50 text-sm max-w-md mx-auto">
-                        Eliminating unnecessary intermediaries. Creating a direct ethical
-                        connection between Colombian farmers and consumers.
-                    </p>
-                </div>
-
-                {/* Gold divider */}
-                <div className="gold-gradient-line mb-14" />
-
-                {/* Grid: Partners · Contact · Social */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-16 mb-14">
-                    {/* Berlin retail partners */}
-                    <div className="text-center md:text-left">
-                        <h4 className="font-display text-xs tracking-[0.2em] text-mokao-gold mb-4 uppercase">
-                            Find Us in Berlin
-                        </h4>
-                        <ul className="space-y-2 text-sm text-mokao-cream/50 font-sans">
-                            <li>Coming soon — retail partners</li>
-                            <li className="text-mokao-cream/30 text-xs">
-                                Interested in stocking MOKAO?
-                                <br />
-                                Reach out below.
-                            </li>
-                        </ul>
-                    </div>
-
+                {/* Grid: Contact · Social */}
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-16 mb-14">
                     {/* Contact */}
-                    <div className="text-center">
+                    <div className="text-center md:text-left">
                         <h4 className="font-display text-xs tracking-[0.2em] text-mokao-gold mb-4 uppercase">
                             Contact
                         </h4>
@@ -137,7 +106,7 @@ export default function Footer() {
                 {/* Copyright */}
                 <div className="text-center pt-8 border-t border-mokao-gold/10">
                     <p className="text-[10px] text-mokao-cream/30 uppercase tracking-[0.2em] font-sans">
-                        © 2026 MOKAO Chocolate Colombiano. All rights reserved.
+                        © 2026 MOKAO CACAO. All rights reserved.
                     </p>
                 </div>
             </div>
