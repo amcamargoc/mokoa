@@ -22,9 +22,9 @@ export default function Home() {
     <main>
       <Hero />
       <OriginPreview />
-      <ProductSection />
-      <PhilosophySection />
       <PartnersSection />
+      <PhilosophySection />
+      <ProductSection />
     </main>
   );
 }
