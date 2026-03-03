@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "@/app/i18n-context";
 
 /**
  * Producer Page
@@ -11,6 +14,8 @@ import Link from "next/link";
  */
 
 export default function ProducerPage() {
+    const { t } = useTranslation();
+
     return (
         <main className="relative min-h-screen flex items-center justify-center overflow-hidden px-5 py-24">
             {/* Background Image */}
@@ -33,28 +38,28 @@ export default function ProducerPage() {
                 <div className="flex items-center justify-center gap-6 mb-8">
                     <div className="w-16 h-px bg-mokao-gold/40" />
                     <span className="text-mokao-gold font-serif italic text-sm tracking-[0.25em] uppercase">
-                        Our Producers
+                        {t("producer.label")}
                     </span>
                     <div className="w-16 h-px bg-mokao-gold/40" />
                 </div>
 
                 <h2 className="font-display text-4xl md:text-5xl lg:text-7xl text-white leading-tight mb-12">
-                    The Hands Behind
+                    {t("producer.title1")}
                     <br />
-                    the Harvest
+                    {t("producer.title2")}
                 </h2>
 
                 <blockquote className="mb-12 border-l-2 md:border-l-0 md:border-y-2 border-mokao-gold/20 py-8 px-6 md:px-12 bg-mokao-dark/20 backdrop-blur-sm rounded-lg">
                     <p className="font-serif italic text-xl md:text-2xl text-mokao-cream leading-relaxed mb-6">
-                        &ldquo;Cacao is not just a crop, it is the heartbeat of our family. Every tree we plant is a promise to the earth and to our children.&rdquo;
+                        {t("producer.quote")}
                     </p>
                     <cite className="block text-sm text-mokao-gold font-sans not-italic tracking-[0.15em] uppercase">
-                        — The Arboleda Family, Maceo
+                        {t("producer.cite")}
                     </cite>
                 </blockquote>
 
                 <p className="font-serif text-lg text-mokao-cream/80 leading-relaxed max-w-xl mx-auto mb-16">
-                    For generations, the families of Maceo, Antioquia have cultivated Fino de Aroma cacao with unwavering respect for the land. Their story — the true heart of MOKAO — will be shared here soon.
+                    {t("producer.text")}
                 </p>
 
                 <Link
@@ -72,7 +77,7 @@ export default function ProducerPage() {
                     >
                         <path d="M0 6h18M13 1l5 5-5 5" />
                     </svg>
-                    Return Home
+                    {t("producer.cta")}
                 </Link>
             </div>
         </main>

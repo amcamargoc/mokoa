@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useRef, useState } from "react";
+import { useTranslation } from "@/app/i18n-context";
 
 /**
  * Partners Section — "Find us in Berlin"
@@ -23,6 +24,7 @@ const PARTNERS = [
 export default function PartnersSection() {
     const scrollContainerRef = useRef<HTMLDivElement>(null);
     const [isPaused, setIsPaused] = useState(false);
+    const { t } = useTranslation();
 
     return (
         <section id="partners" className="py-24 md:py-36 bg-mokao-dark overflow-hidden border-t border-mokao-gold/5 mt-[-1px]">
@@ -30,10 +32,10 @@ export default function PartnersSection() {
                 {/* Section header */}
                 <div className="text-center md:text-left">
                     <span className="inline-block font-serif italic text-mokao-gold/60 text-sm tracking-[0.2em] uppercase mb-4">
-                        Local Stockists
+                        {t("partners.label")}
                     </span>
                     <h3 className="font-display text-4xl md:text-6xl text-mokao-gold tracking-wide">
-                        Find us in Berlin
+                        {t("partners.title")}
                     </h3>
                 </div>
             </div>
@@ -89,10 +91,10 @@ export default function PartnersSection() {
 
             <div className="max-w-7xl mx-auto px-5 text-center mt-24 md:mt-32">
                 <p className="font-serif italic text-mokao-cream/30 text-base max-w-lg mx-auto leading-relaxed">
-                    Connecting the heart of Maceo with the most refined boutiques in the city.
+                    {t("partners.text")}
                     <br />
                     <a href="mailto:partners@mokao.co" className="text-mokao-gold/50 hover:text-mokao-gold transition-colors mt-8 inline-block not-italic uppercase tracking-[0.4em] text-[11px] font-sans border-b border-mokao-gold/20 pb-2">
-                        Become a Stockist →
+                        {t("partners.cta")}
                     </a>
                 </p>
             </div>

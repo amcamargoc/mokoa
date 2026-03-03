@@ -1,0 +1,75 @@
+{
+  "navbar": {
+    "home": "Startseite",
+    "producers": "Unsere Produzenten",
+    "product": "Produkt",
+    "philosophy": "Philosophie"
+  },
+  "hero": {
+    "title": "Kakao",
+    "subtitle1": "mit Zweck.",
+    "subtitle2": "Mit Exzellenz gefertigt, mit Respekt angebaut und mit echter Transparenz gehandelt.",
+    "cta": "Lerne MOKAO kennen"
+  },
+  "origin": {
+    "label": "Unsere Wurzeln",
+    "title": "Von Maceo nach Europa",
+    "text": "Dieser Kakao wird von Bauernfamilien in Maceo, Antioquia, Kolumbien, angebaut, wo das Wissen über Generationen weitergegeben wurde. Das Land wird während des gesamten Produktionsprozesses respektvoll gepflegt, wodurch der Boden und seine natürlichen Zyklen erhalten bleiben, sodass jede Ernte sowohl die Herkunft als auch die Menschen widerspiegelt, die sie pflegen.",
+    "mapLabel": "Maceo, Antioquia",
+    "cta": "Triff die Produzenten"
+  },
+  "product": {
+    "label": "Das Erlebnis",
+    "title": "70% Fino de Aroma",
+    "ingredientsLabel": "Zutaten",
+    "ingredientsText": "Kakaomasse, Kakaobutter, Zucker.",
+    "allergensText": "Kann Spuren von Schalenfrüchten, Erdnüssen, Milch, Gluten und Soja enthalten.",
+    "tastingLabel": "Geschmacksprofil",
+    "tastingNotes": "Dunkle Frucht · Erdig · Milde Bitterkeit · Sanfter Abgang",
+    "badges": {
+      "glutenFree": "Glutenfrei",
+      "colombia": "Kolumbien D.O.",
+      "directTrade": "Direkthandel",
+      "recyclable": "Recycelbar"
+    },
+    "nutrition": {
+      "label": "Durchschnittliche Nährwerte je 100g",
+      "energy": "Energie",
+      "fat": "Fett",
+      "saturates": "davon gesättigte Fettsäuren",
+      "carbohydrate": "Kohlenhydrate",
+      "sugars": "davon Zucker",
+      "fibre": "Ballaststoffe",
+      "protein": "Eiweiß",
+      "salt": "Salz"
+    }
+  },
+  "philosophy": {
+    "label": "Unsere Philosophie",
+    "quote1_1": "Wir haben nicht das Ziel",
+    "quote1_2": "schnell zu wachsen.",
+    "quote2": "Wir wollen richtig wachsen.",
+    "text1": "Qualität vor Quantität. Jede Bohne und Tafel erzählt eine Geschichte von Geduld, von Händen, die den Boden kennen, von einer Partnerschaft, die für Generationen gebaut ist.",
+    "text2": "Wir sind Partner des Bauern, keine Wiederverkäufer."
+  },
+  "partners": {
+    "label": "Lokale Händler",
+    "title": "Finde uns in Berlin",
+    "text": "Wir verbinden das Herz von Maceo mit den raffiniertesten Boutiquen der Stadt.",
+    "cta": "Werde Händler →"
+  },
+  "footer": {
+    "contact": "Kontakt",
+    "follow": "Folgen",
+    "copyright": "© 2026 MOKAO CACAO. Alle Rechte vorbehalten."
+  },
+  "producer": {
+    "label": "Unsere Produzenten",
+    "title1": "Die Hände hinter",
+    "title2": "der Ernte",
+    "quote": "„Kakao ist nicht nur eine Ernte, er ist der Herzschlag unserer Familie. Jeder Baum, den wir pflanzen, ist ein Versprechen an die Erde und an unsere Kinder.“",
+    "cite": "— Die Familie Arboleda, Maceo",
+    "text": "Seit Generationen kultivieren die Familien in Maceo, Antioquia, Fino de Aroma Kakao mit unerschütterlichem Respekt für das Land. Ihre Geschichte — das wahre Herz von MOKAO — wird hier bald geteilt.",
+    "cta": "Zurück zur Startseite"
+  }
+}
