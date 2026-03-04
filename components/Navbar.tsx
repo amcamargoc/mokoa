@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { useTranslation, LanguageCode } from "@/app/i18n-context";
 
 /**
  * Navbar Component
@@ -56,10 +57,8 @@ const LANGUAGES = [
     },
 ];
 
-type LanguageCode = "EN" | "DE" | "ES";
-
 export default function Navbar() {
-    const [activeLang, setActiveLang] = useState<LanguageCode>("ES");
+    const { language: activeLang, setLanguage: setActiveLang, t } = useTranslation();
     const [menuOpen, setMenuOpen] = useState(false);
     const [langMenuOpen, setLangMenuOpen] = useState(false);
 
@@ -152,7 +151,7 @@ export default function Navbar() {
                                 onClick={() => setMenuOpen(false)}
                                 className="hover:text-mokao-gold transition-colors"
                             >
-                                Home
+                                {t("navbar.home")}
                             </Link>
                         </li>
                         <li>
@@ -161,25 +160,25 @@ export default function Navbar() {
                                 onClick={() => setMenuOpen(false)}
                                 className="hover:text-mokao-gold transition-colors"
                             >
-                                Our Producers
+                                {t("navbar.producers")}
                             </Link>
                         </li>
                         <li>
                             <a
-                                href="#product"
+                                href="/#product"
                                 onClick={() => setMenuOpen(false)}
                                 className="hover:text-mokao-gold transition-colors"
                             >
-                                Product
+                                {t("navbar.product")}
                             </a>
                         </li>
                         <li>
                             <a
-                                href="#philosophy"
+                                href="/#philosophy"
                                 onClick={() => setMenuOpen(false)}
                                 className="hover:text-mokao-gold transition-colors"
                             >
-                                Philosophy
+                                {t("navbar.philosophy")}
                             </a>
                         </li>
                     </ul>

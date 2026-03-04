@@ -1,0 +1,115 @@
+{
+  "navbar": {
+    "home": "Startseite",
+    "producers": "Unsere Produzenten",
+    "product": "Produkt",
+    "philosophy": "Philosophie"
+  },
+  "hero": {
+    "title": "Kakao",
+    "subtitle1": "mit Zweck.",
+    "subtitle2": "Mit Exzellenz gefertigt, mit Respekt angebaut und mit echter Transparenz gehandelt.",
+    "cta": "Lerne MOKAO kennen"
+  },
+  "origin": {
+    "label": "Unsere Wurzeln",
+    "title": "Von Maceo nach Europa",
+    "text": "Dieser Kakao wird von Bauernfamilien in Maceo, Antioquia, Kolumbien, angebaut, wo das Wissen über Generationen weitergegeben wurde. Das Land wird während des gesamten Produktionsprozesses respektvoll gepflegt, wodurch der Boden und seine natürlichen Zyklen erhalten bleiben, sodass jede Ernte sowohl die Herkunft als auch die Menschen widerspiegelt, die sie pflegen.",
+    "mapLabel": "Maceo, Antioquia",
+    "cta": "Triff die Produzenten"
+  },
+  "product": {
+    "label": "Das Erlebnis",
+    "title": "70% Fino de Aroma",
+    "ingredientsLabel": "Zutaten",
+    "ingredientsText": "Kakaomasse, Kakaobutter, Zucker.",
+    "allergensText": "Kann Spuren von Schalenfrüchten, Erdnüssen, Milch, Gluten und Soja enthalten.",
+    "tastingLabel": "Geschmacksprofil",
+    "tastingNotes": "Dunkle Frucht · Erdig · Milde Bitterkeit · Sanfter Abgang",
+    "badges": {
+      "glutenFree": "Glutenfrei",
+      "colombia": "Kolumbien D.O.",
+      "directTrade": "Direkthandel",
+      "recyclable": "Recycelbar"
+    },
+    "nutrition": {
+      "label": "Durchschnittliche Nährwerte je 100g",
+      "energy": "Energie",
+      "fat": "Fett",
+      "saturates": "davon gesättigte Fettsäuren",
+      "carbohydrate": "Kohlenhydrate",
+      "sugars": "davon Zucker",
+      "fibre": "Ballaststoffe",
+      "protein": "Eiweiß",
+      "salt": "Salz"
+    }
+  },
+  "philosophy": {
+    "label": "Unsere Philosophie",
+    "quote1_1": "Wir haben nicht das Ziel",
+    "quote1_2": "schnell zu wachsen.",
+    "quote2": "Wir wollen richtig wachsen.",
+    "text1": "Qualität vor Quantität. Jede Bohne und Tafel erzählt eine Geschichte von Geduld, von Händen, die den Boden kennen, von einer Partnerschaft, die für Generationen gebaut ist.",
+    "text2": "Wir sind Partner des Bauern, keine Wiederverkäufer."
+  },
+  "partners": {
+    "label": "Lokale Händler",
+    "title": "Finde uns in Berlin",
+    "text": "Wir verbinden das Herz von Maceo mit den raffiniertesten Boutiquen der Stadt.",
+    "cta": "Werde Händler →"
+  },
+  "footer": {
+    "contact": "Kontakt",
+    "follow": "Folgen",
+    "copyright": "© 2026 MOKAO CACAO. Alle Rechte vorbehalten."
+  },
+  "producer": {
+    "label": "Unsere Produzenten",
+    "title1": "Die Hände hinter",
+    "title2": "der Ernte",
+    "quote": "„Kakao ist nicht nur eine Ernte, er ist der Herzschlag unserer Familie. Jeder Baum, den wir pflanzen, ist ein Versprechen an die Erde und an unsere Kinder.“",
+    "cite": "— Die Familie Arboleda, Maceo",
+    "text": "Seit Generationen kultivieren die Familien in Maceo, Antioquia, Fino de Aroma Kakao mit unerschütterlichem Respekt für das Land. Ihre Geschichte — das wahre Herz von MOKAO — wird hier bald geteilt.",
+    "cta": "Zurück zur Startseite",
+    "name": "Elena Arboleda",
+    "tagline": "Von unserer Familienfarm in Ihre Tasse",
+    "biography_p1": "Elena wuchs zwischen den Kakaobäumen der Familienfarm auf und lernte die feine Kunst des Anbaus von ihren Großeltern. Für sie birgt der Boden die Geschichten vergangener Generationen, und jede Ernte ist eine Fortsetzung dieses Erbes.",
+    "biography_p2": "Als sie die Farm vor über einem Jahrzehnt übernahm, wandelte sie sie mit einem tiefen Engagement für nachhaltige Praktiken um. Sie glaubt, dass wahre Qualität nicht nur von der Sorte des Samens kommt, sondern von der Fürsorge, dem Respekt und der Liebe, die dem Land jeden Tag zuteilwerden.",
+    "biography_p3": "Heute arbeitet Elena an der Seite ihrer Familie und Nachbarn und pflegt ein blühendes Ökosystem. Ihr Kakao ist mehr als nur eine Ernte; er ist ein Zeugnis der Widerstandsfähigkeit der Gemeinschaft, einer gemeinsamen Leidenschaft und einer stillen Hingabe, etwas wirklich Schönes aus der Erde zu erschaffen.",
+    "location_label": "Standort",
+    "location": "Maceo, Antioquia",
+    "experience_label": "Erfahrung",
+    "experienceYears": "15+ Jahre",
+    "philosophy": "Wir bauen nicht nur Kakao an; wir pflegen ein lebendiges Ökosystem. Wenn man die Erde respektiert, belohnt sie einen mit außergewöhnlichen Aromen.",
+    "values_label": "Grundwerte",
+    "value_1": "Nachhaltigkeit",
+    "value_2": "Stärkung der Gemeinschaft",
+    "value_3": "Kompromisslose Qualität",
+    "video_title": "Ein Morgen auf der Farm",
+    "videoDescription": "Begleiten Sie Elena auf einem morgendlichen Spaziergang durch die Kakaohaine, während sie die Reise vom Samen zur Ernte teilt.",
+    "gallery_title": "Szenen der Ernte",
+    "gallery_desc": "Einblicke in die täglichen Rhythmen, die Hände, die die Erde bearbeiten, und die üppige Umgebung, in der unser Kakao entsteht.",
+    "gallery_alt_1": "Elena inspiziert frische Kakaoschoten",
+    "gallery_alt_2": "Die Familie Arboleda versammelt sich um die Fermentationskisten",
+    "gallery_alt_3": "Sonnentrocknung von Kakaobohnen auf Holztabletts",
+    "gallery_alt_4": "Üppiges Blätterdach des Kakaowaldes in Maceo",
+    "gallery_alt_5": "Handverlesung der feinsten Fino de Aroma-Bohnen",
+    "gallery_alt_6": "Ein ruhiger Moment der Reflexion nach der Ernte",
+    "farm_title": "Das Land, das wir kultivieren",
+    "farm_size_label": "Farmgröße",
+    "farm_size": "12 Hektar",
+    "farm_alt_label": "Höhenlage",
+    "farm_alt": "1.050 Meter über dem Meeresspiegel",
+    "farm_season_label": "Erntezeit",
+    "farm_season": "Oktober – Dezember (Haupt), April – Juni (Neben)",
+    "farm_method_label": "Anbaumethode",
+    "farm_method": "Im Schatten unter heimischen Nutzholz- und Obstbäumen angebaut",
+    "farm_comm_label": "Beteiligung der Gemeinschaft",
+    "farm_comm": "Beschäftigt 15 lokale Familien während der Haupternte; leitet ein außerschulisches Programm für Kinder auf dem Land.",
+    "farm_cert_label": "Zertifizierungen",
+    "farm_cert_1": "Biologisch (Muster)",
+    "farm_cert_2": "Direct Trade Verifiziert (Muster)",
+    "intro_title": "Die Geschichte im Boden",
+    "at_a_glance": "Auf einen Blick"
+  }
+}

@@ -1,3 +1,7 @@
+"use client";
+
+import { useTranslation } from "@/app/i18n-context";
+
 /**
  * Philosophy Section
  *
@@ -11,6 +15,8 @@
  */
 
 export default function PhilosophySection() {
+    const { t } = useTranslation();
+
     return (
         <section
             id="philosophy"
@@ -21,7 +27,7 @@ export default function PhilosophySection() {
                 <div className="flex items-center justify-center gap-4 mb-12">
                     <div className="w-12 h-px bg-mokao-gold/30" />
                     <span className="font-serif italic text-mokao-gold/50 text-sm tracking-[0.2em] uppercase">
-                        Our Philosophy
+                        {t("philosophy.label")}
                     </span>
                     <div className="w-12 h-px bg-mokao-gold/30" />
                 </div>
@@ -29,12 +35,12 @@ export default function PhilosophySection() {
                 {/* Main statement — editorial typography */}
                 <blockquote className="mb-12">
                     <p className="font-serif italic text-3xl sm:text-4xl md:text-5xl text-mokao-cream leading-snug tracking-tight">
-                        We do not aim
+                        {t("philosophy.quote1_1")}
                         <br />
-                        to grow fast.
+                        {t("philosophy.quote1_2")}
                     </p>
                     <p className="font-serif italic text-3xl sm:text-4xl md:text-5xl text-mokao-gold leading-snug tracking-tight mt-4">
-                        We aim to grow right.
+                        {t("philosophy.quote2")}
                     </p>
                 </blockquote>
 
@@ -43,12 +49,11 @@ export default function PhilosophySection() {
 
                 {/* Supporting text */}
                 <p className="font-serif text-lg text-mokao-cream/60 leading-relaxed max-w-lg mx-auto mb-6">
-                    Quality over volume. Every grain and bar tells a story of patience, of
-                    hands that know the soil, of a partnership built to last generations.
+                    {t("philosophy.text1")}
                 </p>
 
                 <p className="font-sans text-sm text-mokao-cream/40 tracking-wide">
-                    We are partners of the farmer, not resellers.
+                    {t("philosophy.text2")}
                 </p>
             </div>
         </section>

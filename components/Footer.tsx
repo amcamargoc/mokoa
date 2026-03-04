@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { useTranslation } from "@/app/i18n-context";
 
 /**
  * Footer Component
@@ -13,6 +16,8 @@ import Link from "next/link";
  */
 
 export default function Footer() {
+    const { t } = useTranslation();
+
     return (
         <footer className="bg-mokao-dark border-t border-mokao-gold/20 py-16 md:py-20 px-5">
             <div className="max-w-7xl mx-auto">
@@ -21,7 +26,7 @@ export default function Footer() {
                     {/* Contact */}
                     <div className="text-center md:text-left">
                         <h4 className="font-display text-xs tracking-[0.2em] text-mokao-gold mb-4 uppercase">
-                            Contact
+                            {t("footer.contact")}
                         </h4>
                         <ul className="space-y-2 text-sm text-mokao-cream/50 font-sans">
                             <li>
@@ -39,7 +44,7 @@ export default function Footer() {
                     {/* Social links */}
                     <div className="text-center md:text-right">
                         <h4 className="font-display text-xs tracking-[0.2em] text-mokao-gold mb-4 uppercase">
-                            Follow
+                            {t("footer.follow")}
                         </h4>
                         <div className="flex items-center justify-center md:justify-end gap-5">
                             {/* Instagram */}
@@ -106,7 +111,7 @@ export default function Footer() {
                 {/* Copyright */}
                 <div className="text-center pt-8 border-t border-mokao-gold/10">
                     <p className="text-[10px] text-mokao-cream/30 uppercase tracking-[0.2em] font-sans">
-                        © 2026 MOKAO CACAO. All rights reserved.
+                        {t("footer.copyright")}
                     </p>
                 </div>
             </div>

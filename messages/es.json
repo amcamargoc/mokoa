@@ -1,0 +1,115 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "producers": "Nuestros Productores",
+    "product": "Producto",
+    "philosophy": "Filosofía"
+  },
+  "hero": {
+    "title": "Cacao",
+    "subtitle1": "con propósito.",
+    "subtitle2": "Elaborado con excelencia, cultivado con respeto y comercializado con transparencia real.",
+    "cta": "Conoce MOKAO"
+  },
+  "origin": {
+    "label": "Nuestras Raíces",
+    "title": "De Maceo a Europa",
+    "text": "Este cacao es cultivado por familias campesinas en Maceo, Antioquia, Colombia, donde el conocimiento se ha transmitido de generación en generación. La tierra se cuida con respeto durante todo el proceso de producción, preservando el suelo y sus ciclos naturales para que cada cosecha refleje tanto el origen como a las personas que la nutren.",
+    "mapLabel": "Maceo, Antioquia",
+    "cta": "Conoce a los Productores"
+  },
+  "product": {
+    "label": "La Experiencia",
+    "title": "70% Fino de Aroma",
+    "ingredientsLabel": "Ingredientes",
+    "ingredientsText": "Pasta de cacao, manteca de cacao, azúcar.",
+    "allergensText": "Puede contener trazas de frutos de cáscara, maní, leche, gluten y soja.",
+    "tastingLabel": "Perfil de Cata",
+    "tastingNotes": "Fruta Oscura · Terroso · Amargor Suave · Final Sedoso",
+    "badges": {
+      "glutenFree": "Sin Gluten",
+      "colombia": "Colombia D.O.",
+      "directTrade": "Comercio Directo",
+      "recyclable": "Reciclable"
+    },
+    "nutrition": {
+      "label": "Información nutricional por 100 g",
+      "energy": "Valor energético",
+      "fat": "Grasas",
+      "saturates": "de las cuales saturadas",
+      "carbohydrate": "Carbohidratos",
+      "sugars": "de los cuales azúcares",
+      "fibre": "Fibra alimentaria",
+      "protein": "Proteínas",
+      "salt": "Sal"
+    }
+  },
+  "philosophy": {
+    "label": "Nuestra Filosofía",
+    "quote1_1": "No buscamos",
+    "quote1_2": "crecer rápido.",
+    "quote2": "Buscamos crecer bien.",
+    "text1": "Calidad sobre volumen. Cada grano y barra cuenta una historia de paciencia, de manos que conocen la tierra, de una alianza construida para durar generaciones.",
+    "text2": "Somos socios del agricultor, no revendedores."
+  },
+  "partners": {
+    "label": "Distribuidores Locales",
+    "title": "Encuéntranos en Berlín",
+    "text": "Conectando el corazón de Maceo con las boutiques más refinadas de la ciudad.",
+    "cta": "Conviértete en Distribuidor →"
+  },
+  "footer": {
+    "contact": "Contacto",
+    "follow": "Síguenos",
+    "copyright": "© 2026 MOKAO CACAO. Todos los derechos reservados."
+  },
+  "producer": {
+    "label": "Nuestros Productores",
+    "title1": "Las Manos Detrás",
+    "title2": "de la Cosecha",
+    "quote": "“El cacao no es solo un cultivo, es el latido de nuestra familia. Cada árbol que plantamos es una promesa a la tierra y a nuestros hijos.”",
+    "cite": "— La Familia Arboleda, Maceo",
+    "text": "Durante generaciones, las familias de Maceo, Antioquia, han cultivado cacao Fino de Aroma con un respeto inquebrantable por la tierra. Su historia —el verdadero corazón de MOKAO— será compartida aquí pronto.",
+    "cta": "Volver al Inicio",
+    "name": "Elena Arboleda",
+    "tagline": "De nuestra granja familiar a tu taza",
+    "biography_p1": "Elena creció corriendo entre los árboles de cacao de la granja de su familia, aprendiendo el delicado arte del cultivo de sus abuelos. Para ella, el suelo guarda las historias de generaciones pasadas, y cada cosecha es una continuación de ese legado.",
+    "biography_p2": "Al hacerse cargo de la finca hace más de una década, la transformó con un profundo compromiso con las prácticas sostenibles. Ella cree que la verdadera calidad proviene no solo de la variedad de la semilla, sino del cuidado, el respeto y el amor que se le da a la tierra cada día.",
+    "biography_p3": "Hoy, Elena trabaja junto a su familia y vecinos, nutriendo un ecosistema próspero. Su cacao es más que un cultivo; es un testimonio de la resiliencia de la comunidad, una pasión compartida y una dedicación silenciosa a crear algo verdaderamente hermoso a partir de la tierra.",
+    "location_label": "Ubicación",
+    "location": "Maceo, Antioquia",
+    "experience_label": "Experiencia",
+    "experienceYears": "Más de 15 Años",
+    "philosophy": "No solo cultivamos cacao; nutrimos un ecosistema vivo. Cuando respetas la tierra, te recompensa con sabores extraordinarios.",
+    "values_label": "Valores Fundamentales",
+    "value_1": "Sostenibilidad",
+    "value_2": "Empoderamiento Comunitario",
+    "value_3": "Calidad Sin Concesiones",
+    "video_title": "Una Mañana en la Granja",
+    "videoDescription": "Acompaña a Elena en una caminata matutina por los cacaotales mientras comparte el viaje desde la semilla hasta la cosecha.",
+    "gallery_title": "Escenas de la Cosecha",
+    "gallery_desc": "Vislumbres de los ritmos diarios, las manos que trabajan la tierra y el exuberante entorno donde nace nuestro cacao.",
+    "gallery_alt_1": "Elena inspeccionando mazorcas frescas de cacao",
+    "gallery_alt_2": "La familia Arboleda reunida alrededor de las cajas de fermentación",
+    "gallery_alt_3": "Secado al sol de granos de cacao en bandejas de madera",
+    "gallery_alt_4": "Exuberante dosel del bosque de cacao en Maceo",
+    "gallery_alt_5": "Clasificando a mano los mejores granos de Fino de Aroma",
+    "gallery_alt_6": "Un momento de tranquilidad y reflexión después de la cosecha",
+    "farm_title": "La Tierra Que Cultivamos",
+    "farm_size_label": "Tamaño de la Finca",
+    "farm_size": "12 Hectáreas",
+    "farm_alt_label": "Altitud",
+    "farm_alt": "1.050 metros sobre el nivel del mar",
+    "farm_season_label": "Temporada de Cosecha",
+    "farm_season": "Octubre – Diciembre (Principal), Abril – Junio (Intermedia)",
+    "farm_method_label": "Método de Cultivo",
+    "farm_method": "Cultivado bajo sombra de árboles maderables y frutales nativos",
+    "farm_comm_label": "Participación Comunitaria",
+    "farm_comm": "Emplea a 15 familias locales durante la cosecha alta; dirige un programa extraescolar para niños rurales.",
+    "farm_cert_label": "Certificaciones",
+    "farm_cert_1": "Orgánico (Ficticio)",
+    "farm_cert_2": "Verificado Comercio Directo (Ficticio)",
+    "intro_title": "La Historia en la Tierra",
+    "at_a_glance": "De un Vistazo"
+  }
+}

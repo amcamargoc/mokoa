@@ -1,0 +1,115 @@
+{
+  "navbar": {
+    "home": "Home",
+    "producers": "Our Producers",
+    "product": "Product",
+    "philosophy": "Philosophy"
+  },
+  "hero": {
+    "title": "Cacao",
+    "subtitle1": "with purpose.",
+    "subtitle2": "Crafted with excellence, grown with respect and traded with real transparency.",
+    "cta": "Meet MOKAO"
+  },
+  "origin": {
+    "label": "Our Roots",
+    "title": "From Maceo to Europe",
+    "text": "This cacao is grown by farming families in Maceo, Antioquia, Colombia, where knowledge has been passed down through generations. The land is respectfully tended and cared for throughout the production process, preserving the soil and its natural cycles so that every harvest reflects both the origin and the people who nurture it.",
+    "mapLabel": "Maceo, Antioquia",
+    "cta": "Meet the Producers"
+  },
+  "product": {
+    "label": "The Experience",
+    "title": "70% Fino de Aroma",
+    "ingredientsLabel": "Ingredients",
+    "ingredientsText": "Cocoa paste, cocoa butter, sugar.",
+    "allergensText": "May contain traces of tree nuts, peanuts, milk, gluten and soy.",
+    "tastingLabel": "Tasting Profile",
+    "tastingNotes": "Dark Fruit · Earthy · Mild Bitterness · Smooth Finish",
+    "badges": {
+      "glutenFree": "Gluten Free",
+      "colombia": "Colombia D.O.",
+      "directTrade": "Direct Trade",
+      "recyclable": "Recyclable"
+    },
+    "nutrition": {
+      "label": "Nutritional information per 100 g",
+      "energy": "Energy",
+      "fat": "Fat",
+      "saturates": "of which saturates",
+      "carbohydrate": "Carbohydrate",
+      "sugars": "of which sugars",
+      "fibre": "Fibre",
+      "protein": "Protein",
+      "salt": "Salt"
+    }
+  },
+  "philosophy": {
+    "label": "Our Philosophy",
+    "quote1_1": "We do not aim",
+    "quote1_2": "to grow fast.",
+    "quote2": "We aim to grow right.",
+    "text1": "Quality over volume. Every grain and bar tells a story of patience, of hands that know the soil, of a partnership built to last generations.",
+    "text2": "We are partners of the farmer, not resellers."
+  },
+  "partners": {
+    "label": "Local Stockists",
+    "title": "Find us in Berlin",
+    "text": "Connecting the heart of Maceo with the most refined boutiques in the city.",
+    "cta": "Become a Stockist →"
+  },
+  "footer": {
+    "contact": "Contact",
+    "follow": "Follow",
+    "copyright": "© 2026 MOKAO CACAO. All rights reserved."
+  },
+  "producer": {
+    "label": "Our Producers",
+    "title1": "The Hands Behind",
+    "title2": "the Harvest",
+    "quote": "“Cacao is not just a crop, it is the heartbeat of our family. Every tree we plant is a promise to the earth and to our children.”",
+    "cite": "— The Arboleda Family, Maceo",
+    "text": "For generations, the families of Maceo, Antioquia have cultivated Fino de Aroma cacao with unwavering respect for the land. Their story — the true heart of MOKAO — will be shared here soon.",
+    "cta": "Return Home",
+    "name": "Elena Arboleda",
+    "tagline": "From our family farm to your cup",
+    "biography_p1": "Elena grew up running between the cacao trees of her family's farm, learning the delicate art of cultivation from her grandparents. For her, the soil holds the stories of generations past, and every harvest is a continuation of that legacy.",
+    "biography_p2": "Taking over the farm over a decade ago, she transformed it with a deep commitment to sustainable practices. She believes that true quality comes not just from the variety of the seed, but from the care, respect, and love given to the land every single day.",
+    "biography_p3": "Today, Elena works alongside her family and neighbors, nurturing a thriving ecosystem. Her cacao is more than a crop; it's a testament to community resilience, a shared passion, and a quiet dedication to creating something truly beautiful from the earth.",
+    "location_label": "Location",
+    "location": "Maceo, Antioquia",
+    "experience_label": "Experience",
+    "experienceYears": "15+ Years",
+    "philosophy": "We don't just grow cacao; we nurture a living ecosystem. When you respect the earth, it rewards you with extraordinary flavors.",
+    "values_label": "Core Values",
+    "value_1": "Sustainability",
+    "value_2": "Community Empowerment",
+    "value_3": "Uncompromised Quality",
+    "video_title": "A Morning on the Farm",
+    "videoDescription": "Join Elena on a morning walk through the cacao groves as she shares the journey from seed to harvest.",
+    "gallery_title": "Scenes from the Harvest",
+    "gallery_desc": "Glimpses into the daily rhythms, the hands that work the earth, and the lush environment where our cacao is born.",
+    "gallery_alt_1": "Elena inspecting fresh cacao pods",
+    "gallery_alt_2": "The Arboleda family gathering around the fermentation boxes",
+    "gallery_alt_3": "Sun-drying cacao beans on wooden trays",
+    "gallery_alt_4": "Lush canopy of the cacao forest in Maceo",
+    "gallery_alt_5": "Sorting the finest Fino de Aroma beans by hand",
+    "gallery_alt_6": "A quiet moment of reflection after the harvest",
+    "farm_title": "The Land We Cultivate",
+    "farm_size_label": "Farm Size",
+    "farm_size": "12 Hectares",
+    "farm_alt_label": "Altitude",
+    "farm_alt": "1,050 meters above sea level",
+    "farm_season_label": "Harvest Season",
+    "farm_season": "October – December (Main), April – June (Mid)",
+    "farm_method_label": "Cultivation Method",
+    "farm_method": "Shade-grown under native timber and fruit trees",
+    "farm_comm_label": "Community Involvement",
+    "farm_comm": "Employs 15 local families during peak harvest; runs an after-school program for rural children.",
+    "farm_cert_label": "Certifications",
+    "farm_cert_1": "Organic (Mock)",
+    "farm_cert_2": "Direct Trade Verified (Mock)",
+    "intro_title": "The Story in the Soil",
+    "at_a_glance": "At a Glance"
+  }
+}
