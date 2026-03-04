@@ -1,4 +1,7 @@
+"use client";
+
 import Image from "next/image";
+import { useTranslation } from "@/app/i18n-context";
 
 /**
  * Hero Section — "From Seed to Soul"
@@ -12,6 +15,8 @@ import Image from "next/image";
  */
 
 export default function Hero() {
+    const { t } = useTranslation();
+
     return (
         <section className="relative min-h-screen bg-[#1a291f] flex items-center justify-center overflow-hidden transition-colors duration-700">
 
@@ -40,12 +45,12 @@ export default function Hero() {
 
                 {/* Title */}
                 <h2 className="font-display text-5xl sm:text-6xl lg:text-[6.5rem] text-[#fdf8e7] leading-[1.05] font-light tracking-tight drop-shadow-lg">
-                    Cacao <span className="block text-mokao-gold italic mt-3">con propósito.</span>
+                    {t("hero.title")} <span className="block text-mokao-gold italic mt-3">{t("hero.subtitle1")}</span>
                 </h2>
 
                 {/* Subtitle */}
                 <p className="mt-8 max-w-md md:max-w-lg font-serif text-lg sm:text-xl text-[#e8dfc9] leading-relaxed font-light tracking-wide lg:text-2xl drop-shadow-md">
-                    Elaborado con excelencia, cultivado con respeto y comercializado con transparencia real.
+                    {t("hero.subtitle2")}
                 </p>
 
             </div>
@@ -54,10 +59,10 @@ export default function Hero() {
             <a
                 href="#origin"
                 className="absolute bottom-10 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-4 transition-all duration-500 hover:opacity-100 opacity-90 group cursor-pointer"
-                aria-label="Conoce MOKAO"
+                aria-label={t("hero.cta")}
             >
                 <span className="text-[10px] sm:text-xs tracking-[0.4em] uppercase text-mokao-gold font-sans font-medium hover:tracking-[0.55em] transition-all duration-500 drop-shadow-md">
-                    Conoce MOKAO
+                    {t("hero.cta")}
                 </span>
                 <div className="mt-1 animate-bounce">
                     <svg className="w-5 h-5 text-mokao-gold transition-colors duration-300 drop-shadow-md" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

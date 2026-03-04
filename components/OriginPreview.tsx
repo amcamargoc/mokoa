@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useTranslation } from "@/app/i18n-context";
 
 /**
  * Origin Preview Section
@@ -14,6 +17,8 @@ import Link from "next/link";
  */
 
 export default function OriginPreview() {
+    const { t } = useTranslation();
+
     return (
         <section
             id="origin"
@@ -26,15 +31,15 @@ export default function OriginPreview() {
                         {/* Section header */}
                         <div className="mb-8 md:mb-12 text-center md:text-left">
                             <span className="inline-block font-serif italic text-mokao-gold/70 text-sm tracking-[0.2em] uppercase mb-4">
-                                Our Roots
+                                {t("origin.label")}
                             </span>
                             <h3 className="font-display text-3xl md:text-4xl lg:text-5xl text-mokao-gold tracking-wide leading-tight">
-                                From Maceo to Europe
+                                {t("origin.title")}
                             </h3>
                         </div>
 
                         <p className="font-serif text-lg md:text-xl text-mokao-cream/90 leading-relaxed mb-10 md:mb-14 text-center md:text-left">
-                            This cacao is grown by farming families in Maceo, Antioquia, Colombia, where knowledge has been passed down through generations. The land is respectfully tended and cared for throughout the production process, preserving the soil and its natural cycles so that every harvest reflects both the origin and the people who nurture it.
+                            {t("origin.text")}
                         </p>
 
                         {/* Centered Map under text */}
@@ -53,7 +58,7 @@ export default function OriginPreview() {
                             <div className="absolute inset-0 pointer-events-none shadow-[inset_0_0_20px_rgba(0,0,0,0.4)]" />
                             <div className="absolute bottom-3 left-3 right-3 bg-mokao-dark/90 backdrop-blur-md p-2 rounded text-center pointer-events-none border border-mokao-gold/10">
                                 <span className="text-[10px] uppercase tracking-[0.2em] text-mokao-gold font-display">
-                                    Maceo, Antioquia
+                                    {t("origin.mapLabel")}
                                 </span>
                             </div>
                         </div>
@@ -83,7 +88,7 @@ export default function OriginPreview() {
                             href="/producer"
                             className="inline-flex items-center gap-4 text-mokao-gold font-display text-sm md:text-base tracking-[0.2em] uppercase border-b-2 border-mokao-gold/30 hover:border-mokao-gold pb-2 transition-all group"
                         >
-                            Meet the Producers
+                            {t("origin.cta")}
                             <svg
                                 width="20"
                                 height="12"

@@ -1,3 +1,7 @@
+"use client";
+
+import { useTranslation } from "@/app/i18n-context";
+
 /**
  * Product Section — 70% Fino de Aroma
  *
@@ -9,27 +13,6 @@
  * - Gold accents for section headings and badge borders
  * - Full nutritional info presented in a clean, minimalist table
  */
-
-const TASTING_NOTES = "Dark Fruit · Earthy · Mild Bitterness · Smooth Finish";
-
-const NUTRITION_DATA = [
-    { label: "Energy", value: "2365 kJ / 565 kcal" },
-    { label: "Fat", value: "42,8 g", isSection: true },
-    { label: "of which saturates", value: "25,4 g", isSub: true },
-    { label: "Carbohydrate", value: "34,8 g", isSection: true },
-    { label: "of which sugars", value: "25,8 g", isSub: true },
-    { label: "Fibre", value: "14 g" },
-    { label: "Protein", value: "9,8 g" },
-    { label: "Salt", value: "0 mg" },
-];
-
-/** Trusted icons — certifications and origin */
-const BADGES = [
-    { label: "Gluten Free", icon: "gluten-free" },
-    { label: "Colombia D.O.", icon: "colombia" },
-    { label: "Direct Trade", icon: "handshake" },
-    { label: "Recyclable", icon: "recycle" },
-];
 
 /** Simple SVG icons for badges */
 function BadgeIcon({ type }: { type: string }) {
@@ -70,16 +53,36 @@ function BadgeIcon({ type }: { type: string }) {
 }
 
 export default function ProductSection() {
+    const { t } = useTranslation();
+
+    const NUTRITION_DATA = [
+        { label: t("product.nutrition.energy"), value: "2365 kJ / 565 kcal" },
+        { label: t("product.nutrition.fat"), value: "42,8 g", isSection: true },
+        { label: t("product.nutrition.saturates"), value: "25,4 g", isSub: true },
+        { label: t("product.nutrition.carbohydrate"), value: "34,8 g", isSection: true },
+        { label: t("product.nutrition.sugars"), value: "25,8 g", isSub: true },
+        { label: t("product.nutrition.fibre"), value: "14 g" },
+        { label: t("product.nutrition.protein"), value: "9,8 g" },
+        { label: t("product.nutrition.salt"), value: "0 mg" },
+    ];
+
+    const BADGES = [
+        { label: t("product.badges.glutenFree"), icon: "gluten-free" },
+        { label: t("product.badges.colombia"), icon: "colombia" },
+        { label: t("product.badges.directTrade"), icon: "handshake" },
+        { label: t("product.badges.recyclable"), icon: "recycle" },
+    ];
+
     return (
         <section id="product" className="py-20 md:py-28 px-5">
             <div className="max-w-7xl mx-auto">
                 {/* Section header */}
                 <div className="text-center mb-14 md:mb-20">
                     <span className="inline-block font-serif italic text-mokao-gold/70 text-sm tracking-[0.2em] uppercase mb-3">
-                        The Experience
+                        {t("product.label")}
                     </span>
                     <h3 className="font-display text-3xl md:text-4xl lg:text-5xl text-mokao-gold tracking-wide">
-                        70% Fino de Aroma
+                        {t("product.title")}
                     </h3>
                 </div>
 
@@ -90,22 +93,22 @@ export default function ProductSection() {
                         <div className="flex flex-col space-y-6">
                             <div>
                                 <h4 className="font-display text-xs tracking-[0.3em] text-mokao-gold mb-3 uppercase opacity-80">
-                                    Ingredients
+                                    {t("product.ingredientsLabel")}
                                 </h4>
                                 <p className="font-serif text-lg text-mokao-cream/90 leading-relaxed italic">
-                                    Cocoa paste, cocoa butter, sugar.
+                                    {t("product.ingredientsText")}
                                 </p>
                                 <p className="text-sm text-mokao-cream/60 mt-3 font-sans max-w-sm">
-                                    May contain traces of tree nuts, peanuts, milk, gluten and soy.
+                                    {t("product.allergensText")}
                                 </p>
                             </div>
 
                             <div className="pt-6 border-t border-mokao-gold/10">
                                 <h4 className="font-display text-xs tracking-[0.3em] text-mokao-gold mb-3 uppercase opacity-80">
-                                    Tasting Profile
+                                    {t("product.tastingLabel")}
                                 </h4>
                                 <p className="font-sans text-sm tracking-widest text-mokao-cream/80 uppercase">
-                                    {TASTING_NOTES}
+                                    {t("product.tastingNotes")}
                                 </p>
                             </div>
                         </div>
@@ -139,7 +142,7 @@ export default function ProductSection() {
 
                             <h4 className="font-display text-xs tracking-[0.3em] text-mokao-gold mb-8 uppercase opacity-80 text-center leading-relaxed">
                                 Durchschnittliche Nährwerte je 100g<br />
-                                <span className="text-[9px] text-mokao-gold/50 tracking-widest block mt-1">Nutritional information per 100 g</span>
+                                <span className="text-[9px] text-mokao-gold/50 tracking-widest block mt-1">{t("product.nutrition.label")}</span>
                             </h4>
                             <div className="space-y-4">
                                 {NUTRITION_DATA.map((item, idx) => (

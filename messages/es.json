@@ -1,0 +1,75 @@
+{
+  "navbar": {
+    "home": "Inicio",
+    "producers": "Nuestros Productores",
+    "product": "Producto",
+    "philosophy": "Filosofía"
+  },
+  "hero": {
+    "title": "Cacao",
+    "subtitle1": "con propósito.",
+    "subtitle2": "Elaborado con excelencia, cultivado con respeto y comercializado con transparencia real.",
+    "cta": "Conoce MOKAO"
+  },
+  "origin": {
+    "label": "Nuestras Raíces",
+    "title": "De Maceo a Europa",
+    "text": "Este cacao es cultivado por familias campesinas en Maceo, Antioquia, Colombia, donde el conocimiento se ha transmitido de generación en generación. La tierra se cuida con respeto durante todo el proceso de producción, preservando el suelo y sus ciclos naturales para que cada cosecha refleje tanto el origen como a las personas que la nutren.",
+    "mapLabel": "Maceo, Antioquia",
+    "cta": "Conoce a los Productores"
+  },
+  "product": {
+    "label": "La Experiencia",
+    "title": "70% Fino de Aroma",
+    "ingredientsLabel": "Ingredientes",
+    "ingredientsText": "Pasta de cacao, manteca de cacao, azúcar.",
+    "allergensText": "Puede contener trazas de frutos de cáscara, maní, leche, gluten y soja.",
+    "tastingLabel": "Perfil de Cata",
+    "tastingNotes": "Fruta Oscura · Terroso · Amargor Suave · Final Sedoso",
+    "badges": {
+      "glutenFree": "Sin Gluten",
+      "colombia": "Colombia D.O.",
+      "directTrade": "Comercio Directo",
+      "recyclable": "Reciclable"
+    },
+    "nutrition": {
+      "label": "Información nutricional por 100 g",
+      "energy": "Valor energético",
+      "fat": "Grasas",
+      "saturates": "de las cuales saturadas",
+      "carbohydrate": "Carbohidratos",
+      "sugars": "de los cuales azúcares",
+      "fibre": "Fibra alimentaria",
+      "protein": "Proteínas",
+      "salt": "Sal"
+    }
+  },
+  "philosophy": {
+    "label": "Nuestra Filosofía",
+    "quote1_1": "No buscamos",
+    "quote1_2": "crecer rápido.",
+    "quote2": "Buscamos crecer bien.",
+    "text1": "Calidad sobre volumen. Cada grano y barra cuenta una historia de paciencia, de manos que conocen la tierra, de una alianza construida para durar generaciones.",
+    "text2": "Somos socios del agricultor, no revendedores."
+  },
+  "partners": {
+    "label": "Distribuidores Locales",
+    "title": "Encuéntranos en Berlín",
+    "text": "Conectando el corazón de Maceo con las boutiques más refinadas de la ciudad.",
+    "cta": "Conviértete en Distribuidor →"
+  },
+  "footer": {
+    "contact": "Contacto",
+    "follow": "Síguenos",
+    "copyright": "© 2026 MOKAO CACAO. Todos los derechos reservados."
+  },
+  "producer": {
+    "label": "Nuestros Productores",
+    "title1": "Las Manos Detrás",
+    "title2": "de la Cosecha",
+    "quote": "“El cacao no es solo un cultivo, es el latido de nuestra familia. Cada árbol que plantamos es una promesa a la tierra y a nuestros hijos.”",
+    "cite": "— La Familia Arboleda, Maceo",
+    "text": "Durante generaciones, las familias de Maceo, Antioquia, han cultivado cacao Fino de Aroma con un respeto inquebrantable por la tierra. Su historia —el verdadero corazón de MOKAO— será compartida aquí pronto.",
+    "cta": "Volver al Inicio"
+  }
+}
